@@ -1,0 +1,64 @@
+
+
+@media (min-width: 768px) {
+    .vertical-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 200px;
+        background-color: #212131;
+        color: white;
+        padding: 40px;
+        font-size: 20px;
+        /* Add any other styling you need */
+
+        display: flex;
+        flex-direction: column; /* Display items vertically */
+        justify-content: flex-start; /* Align items to the top */
+        align-items: flex-start; /* Align items to the left */
+        text-align: center;
+    }    
+    .vertical-navbar img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .vertical-navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;;
+        text-align: center;
+    }
+
+    .vertical-navbar img {
+        max-width: 75%;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+
+
+  
+  .vertical-navbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .vertical-navbar li {
+    margin-bottom: 10px;
+  }
+  
+  .vertical-navbar a {
+    text-decoration: none;
+    color: white;
+  }
