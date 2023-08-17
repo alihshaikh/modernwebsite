@@ -6,7 +6,7 @@ const Textbox = ({title, content}) => {
   return (
     <div className='textColor'>
         <h2>{title}</h2>
-        <p>{content}</p>
+        <div>{content}</div>
     </div>
   );
 };

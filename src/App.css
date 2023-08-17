@@ -9,6 +9,12 @@
   display: flex;
   flex-direction: column;
   padding-left: 300px;
+  /* this aligns section headers to left of flex container */
+  /* align-items: flex-start; */
+}
+
+.content-description {
+  align-items: flex-start;
 }
 
 @media  (max-width: 768px) {

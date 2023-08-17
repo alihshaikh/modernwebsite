@@ -6,6 +6,7 @@ const Navbar = () => {
   return (
     <nav className="vertical-navbar">
       <ul>
+        <li><h1>Hi! I'm Ali.</h1></li>
         <li><img src={linkedImage}></img></li>
         <li><a href="/education">Education</a></li>
         <li><a href="/experience">Experience</a></li>
