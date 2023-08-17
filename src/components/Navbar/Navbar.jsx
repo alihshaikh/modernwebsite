@@ -1,4 +1,3 @@
-// VerticalNavbar.js
 import React from 'react';
 import './Navbar.css';
 import linkedImage from '../../imgs/linked.jpeg';
