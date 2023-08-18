@@ -1,8 +1,8 @@
 import React from 'react';
-import './Textbox.css'
+import './ContentContainer.css'
 
 
-const Textbox = ({title, content, isDarkMode}) => {
+const ContentContainer = ({title, content, isDarkMode}) => {
     const textColor = {
         color: isDarkMode ? 'white' : 'black'
     }
@@ -15,4 +15,4 @@ const Textbox = ({title, content, isDarkMode}) => {
   );
 };
 
-export default Textbox;
+export default ContentContainer;

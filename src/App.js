@@ -1,9 +1,9 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import Textbox from './components/Textbox/Textbox';
-import Section from './components/Section/Section';
+import ContentContainer from './components/ContentContainer/ContentContainer';
 import Content from './components/Content/Content';
 import { useState } from 'react';
+
 
 function App() {
 
@@ -26,7 +26,7 @@ function App() {
         isDarkMode={isDark}
       />
       <div className='content-container'>
-        <Textbox
+        <ContentContainer
           title='About Me'
           content= {
             <>
@@ -36,7 +36,7 @@ function App() {
           }
           isDarkMode={isDark}
         />
-        <Textbox
+        <ContentContainer
           title='Education'
           content= {
             <>
@@ -49,7 +49,7 @@ Management"/>
           }
           isDarkMode={isDark}
         />
-        <Textbox
+        <ContentContainer
           title='Projects'
           content= {
             <>
@@ -58,7 +58,7 @@ Management"/>
           }
           isDarkMode={isDark}
         />
-        <Textbox
+        <ContentContainer
           title='Hobbies'
           content= {
             <>
