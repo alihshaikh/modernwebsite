@@ -22,7 +22,7 @@ function App() {
   return (
     <div className='App'>      
       <Navbar
-        togglebutton={ <button className='toggle-button' onClick={setDarkMode}> {isDark ? 'Light' : 'Dark'} Mode</button>}
+        togglebutton={ <button className='toggle-button' onClick={setDarkMode}>  {isDark ? 'Light' : 'Dark'} Mode</button>}
         isDarkMode={isDark}
       />
       <div className='content-container'>
@@ -40,7 +40,7 @@ function App() {
           title='Education'
           content= {
             <>
-              <Content content="University of California, Riverside" />
+              <Content title="University of California Riverside" />
               <Content content="B.S in Computer Science w/ Business Applications" />
               <Content content="GPA: 3.7; Relevant Coursework: Software Construction, Intermediate Data Structures/Algorithms, Database Management
 Systems, Introduction to Artificial Intelligence, Introduction to Software Engineering, Marketing and Distribution
@@ -53,8 +53,12 @@ Management"/>
           title='Projects'
           content= {
             <>
-            {/* to add */}
+            <Content title="Bloggit" content="A full-stack social media blogging application inspired by Instagram and Reddit. Supports features such as creating an account, posting blogs, and discovering blogs posted by others users."/>
+            <Content title="Spotify Analytics Application" content="Web application built to analyze Spotify users' music taste. Determines favorite songs, artists, and can even create a new playlist filled with your favorite songs with a click of a buttion. Utilized Spotify API."/>
+            <Content title="MovieMe" content="C++ terminal based application to display movie reccomendations based on user's interests (actor, genre, etc). Scrapes movie data from popular movie databases such as IMDB."/>
+
             </>
+
           }
           isDarkMode={isDark}
         />
@@ -62,7 +66,11 @@ Management"/>
           title='Hobbies'
           content= {
             <>
-            {/* to add */}
+            <Content title="Basketball"/>
+            <Content title="Finance/Business Strategy"/>
+            <Content title="Fashion"/>
+            <Content title="Lifting"/>
+            <Content title="Technology"/>
             </>
           }
           isDarkMode={isDark}
