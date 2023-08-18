@@ -1,9 +1,14 @@
 import React from 'react'
 import './Section.css';
 
-const Section = ({sectionTitle}) => {
+const Section = ({sectionTitle, isDarkMode}) => {
+
+    const titleColor = {
+        color: isDarkMode ? 'white' : 'black'
+    }
+
     return (
-        <div className='section'>
+        <div className='section' style={titleColor}>
             <h1>{sectionTitle}</h1>
         </div>
     );
