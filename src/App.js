@@ -22,7 +22,7 @@ function App() {
   return (
     <div className='App'>      
       <Navbar
-        togglebutton={ <button onClick={setDarkMode}>Toggle Mode</button>}
+        togglebutton={ <button className='toggle-button' onClick={setDarkMode}> {isDark ? 'Light' : 'Dark'} Mode</button>}
         isDarkMode={isDark}
       />
       <div className='content-container'>

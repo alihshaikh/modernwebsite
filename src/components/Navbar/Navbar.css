@@ -62,3 +62,22 @@
     text-decoration: none;
     color: white;
   }
+
+a:hover{
+  font-size: 25px;
+}
+
+.toggle-button {
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  background-color: #393956;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-button:hover {
+  background-color: #2c2c40;
+}
