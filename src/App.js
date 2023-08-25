@@ -3,7 +3,10 @@ import Navbar from './components/Navbar/Navbar';
 import ContentContainer from './components/ContentContainer/ContentContainer';
 import Content from './components/Content/Content';
 import { useState } from 'react';
-
+import TypingEffect from './components/TypingEffect/TypingEffect';
+import ucr from "./imgs/ucr.png"
+import amzn from "./imgs/amzn.jpeg"
+import ProjectCard from './components/ProjectCard/ProjectCard';
 
 function App() {
 
@@ -25,57 +28,83 @@ function App() {
         togglebutton={ <button className='toggle-button' onClick={setDarkMode}>  {isDark ? 'Light' : 'Dark'} Mode</button>}
         isDarkMode={isDark}
       />
-      <div className='content-container'>
-        <ContentContainer
-          title='About Me'
-          content= {
-            <>
-              <Content content="I am an undergraduate student at the University of California, Riverside studying Computer Science and Business. I have been fascinated by the world of technology ever since I was a kid. Growing up, I would always disassemble old toys and try to engineer crazy things out of them." />
-              <Content content="I hold a strong interest in the field of Software Engineering and am open to new opportunities and challenges." />
-            </>
-          }
-          isDarkMode={isDark}
-        />
-        <ContentContainer
-          title='Education'
-          content= {
-            <>
-              <Content title="University of California Riverside" />
-              <Content content="B.S in Computer Science w/ Business Applications" />
-              <Content content="GPA: 3.7; Relevant Coursework: Software Construction, Intermediate Data Structures/Algorithms, Database Management
-Systems, Introduction to Artificial Intelligence, Introduction to Software Engineering, Marketing and Distribution
-Management"/>
-            </>
-          }
-          isDarkMode={isDark}
-        />
-        <ContentContainer
-          title='Projects'
-          content= {
-            <>
-            <Content title="Bloggit" content="A full-stack social media blogging application inspired by Instagram and Reddit. Supports features such as creating an account, posting blogs, and discovering blogs posted by others users."/>
-            <Content title="Spotify Analytics Application" content="Web application built to analyze Spotify users' music taste. Determines favorite songs, artists, and can even create a new playlist filled with your favorite songs with a click of a buttion. Utilized Spotify API."/>
-            <Content title="MovieMe" content="C++ terminal based application to display movie reccomendations based on user's interests (actor, genre, etc). Scrapes movie data from popular movie databases such as IMDB."/>
-
-            </>
-
-          }
-          isDarkMode={isDark}
-        />
-        <ContentContainer
-          title='Hobbies'
-          content= {
-            <>
-            <Content title="Basketball"/>
-            <Content title="Finance/Business Strategy"/>
-            <Content title="Fashion"/>
-            <Content title="Lifting"/>
-            <Content title="Technology"/>
-            </>
-          }
-          isDarkMode={isDark}
-        />
-    
+      <div className='main-content'>
+        <div className='section'>
+          <div className='sectionHeader'><h1>About Me</h1></div>
+          <div className='contentBox about-me-description'>
+            <p>
+            Hi! My name is Ali Shaikh and I am currently a first year student at the University of California, Riverside, majoring in Computer Science (B.S.). Some interests of mine include playing video games, pickup basketball, music, and learning new things on my own. I hold a strong interest in the field of Software Engineering and am open to new opportunities and challenges.
+            </p>
+          </div>
+        </div>
+        <div className='section'>
+          <div className='sectionHeader'><h1>Education</h1></div>
+          <div className='contentBox'>
+            <Content 
+              title={"University of California, Riverside"}
+              content={[
+                "Cumulative GPA: 3.7; Chancellor's Honor List",
+                "Software Construction, Intermediate Data Struture/Algorithms, Database Management Systems, Introduction to Artificial Intelligence, Introduction to Software Engineering, Marketing and Distribution Management",
+              ]}
+              image={ucr}
+              date={"September 2020 - June 2024"}
+            />
+          </div>
+        </div>
+        <div className='section' >
+          <div className='sectionHeader'><h1>Experience</h1></div>
+            <div className='contentBox' style={{ gap: '20px' }}>
+            <Content 
+              title={"Software Development Engineer Intern - Amazon"}
+              content={[
+                "Designed and implemented the launch of a new product within Amazon Corporate B2B services",
+                "Leveraged AWS services in backend development such as AWS Lambda, API Gateway, S3, DynamoDB, and SQS",
+                "Developed frontend experience using Spring MVC Java framework",
+                "Conducted weekly development demonstrations/standups among associates and various external teams"
+              ]}
+              image={amzn}
+              date={"June 2023 - August 2023"}
+              className="content-with-padding"
+            />
+            <h1></h1>
+            <Content 
+              title={"Supplemental Instruction Leader - UCR"}
+              content={[
+                "Instructor for CS 10A/B (C++ Programming I and II) and CS 10C (Data Structures and Algorithms)",
+                "Tutored 40+ students in Introductory Programming in C++ and 30+ students in Data Structures/Algorithms",
+                "Organized lesson plans for 3+ classes, focusing on material covered in class to solidify students’ understanding",
+                "Achieved an average increase of student overall grade by 10% whilst holding 4+ sessions per week"
+              ]}
+              image={ucr}
+              date={"June 2023 - August 2023"}
+              className="content-with-padding"
+            />
+            </div>
+        </div>
+        <div className='section'>
+          <div className='sectionHeader'><h1>Projects</h1></div>
+          <div className='contentBox' style={{ gap: '20px' }}>
+              <ProjectCard 
+              title="Bloggit"
+              description = "Developed a full-stack application, allowing users to create profiles and post customized blogs to their community. Implemented a structured back-end with proper error handling, enabling requests to and from MongoDB database."
+              />
+              <ProjectCard 
+              title="Spotify Analytics Application"
+              description = "Created a web application that allows Spotify users to learn more about their listening habits. Integrated requests from the Spotify API to display user analytics such as favorite songs and artists. Designed an automated system which creates personalized playlists based on user’s interests"
+              />
+              <ProjectCard 
+              title="MovieMe"
+              description = "Contributed to back-end development whilst working with large movie databases with over 1000 movies. Devised an algorithm which generates movie recommendations based on user’s input of favorite movies, genres, and
+              actors. Group project @ UCR"
+              />
+          </div>
+        </div>
+        <div className='section' >
+          <div className='sectionHeader'><h1>Hobbies</h1></div>
+          <div className='contentBox'>
+            <h3>Basketball • Finance • Climbing • Fitness • Technology • Video Games • Music</h3>
+          </div>
+        </div>
       </div>
     </div>
   );

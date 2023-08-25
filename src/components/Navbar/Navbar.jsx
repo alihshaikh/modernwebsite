@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import linkedImage from '../../imgs/linked.jpeg';
+import TypingEffect from '../TypingEffect/TypingEffect';
 
 
 const Navbar = ({togglebutton, isDarkMode}) => {
@@ -9,7 +10,7 @@ const Navbar = ({togglebutton, isDarkMode}) => {
     <div className='vertical-navbar' >
       <nav >
       <ul>
-        <li><h1>Hi! I'm Ali.</h1></li>
+        <li><h1><TypingEffect text="Hi. I'm Ali!"/></h1></li>
         <li><img src={linkedImage}></img></li>
         <li><a href="/education">Education</a></li>
         <li><a href="/experience">Experience</a></li>

@@ -1,0 +1,30 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #141f38;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+.project-card-description {
+    max-width: 290px;
+}
+
+.project-card-button {
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: #393956;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+
+.project-card-button-down {
+    margin-top: auto;
+    padding: 20px;
+
+}

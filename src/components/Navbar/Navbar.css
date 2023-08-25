@@ -7,17 +7,13 @@
         left: 0;
         height: 100vh;
         width: 200px;
-        background-color: #212131;
+        background-color: #0f172a;
         color: white;
         padding: 40px;
         font-size: 20px;
         /* Add any other styling you need */
 
-        display: flex;
-        flex-direction: column; /* Display items vertically */
-        justify-content: flex-start; /* Align items to the top */
-        align-items: flex-start; /* Align items to the left */
-        text-align: center;
+
     }    
     .vertical-navbar img {
         max-width: 100%;
@@ -32,7 +28,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #212131;
+        background-color: #0f172a;
         color: white;
         padding: 10px 20px;
         font-size: 20px;;
@@ -45,9 +41,6 @@
         border-radius: 50%;
     }
 }
-
-
-
   
   .vertical-navbar ul {
     list-style-type: none;
