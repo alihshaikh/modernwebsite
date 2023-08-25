@@ -2,6 +2,9 @@
 
 @media (min-width: 768px) {
     .vertical-navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
         position: fixed;
         top: 0;
         left: 0;
@@ -12,7 +15,7 @@
         padding: 40px;
         font-size: 20px;
         /* Add any other styling you need */
-
+      
 
     }    
     .vertical-navbar img {
@@ -74,3 +77,5 @@ a:hover{
 .toggle-button:hover {
   background-color: #2c2c40;
 }
+
+
