@@ -25,7 +25,7 @@ const Navbar = ({togglebutton, isDarkMode}) => {
     <div className='vertical-navbar' >
       <nav>
       <ul>
-        <li><h1><TypingEffect text="Hi. I'm Ali!"/></h1></li>
+        <li><h1><TypingEffect text="<Hi. I'm Ali!/>"/></h1></li>
         <li><img src={linkedImage}></img></li>
         <li><a href="#education" onClick={(e) => scrollToSection(e, 'education')}>Education</a></li>
         <li><a href="#experience" onClick={(e) => scrollToSection(e, 'experience')}>Experience</a></li>
