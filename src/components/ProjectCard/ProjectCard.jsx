@@ -12,7 +12,7 @@ const ProjectCard = (props) => {
                 <p>{props.description}</p>
             </div>
             <div className='project-card-button-down'>
-                <button className='project-card-button'>Github</button>
+                <a href={props.link}><button className='project-card-button'>Github</button></a>
             </div>
         </div>      
         </>

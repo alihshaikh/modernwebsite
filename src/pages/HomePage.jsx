@@ -48,13 +48,13 @@ const HomePage = () => {
         isDarkMode={isDark}
       />
       <div className='main-content'>
-        <div className='section'>
+        <div className='section' id='about'>
           <div className='sectionHeader'><h1>About Me</h1></div>
           <div className='contentBox'>
             <AboutMeCard image={linked} content={"Hi! My name is Ali Shaikh and I am going into my senior year as an undergraduate student at the University of California, Riverside, majoring in Computer Science & Business. Some interests of mine include playing video games, pickup basketball, music, and learning new things on my own. I hold a strong interest in the field of Software Engineering and am open to new opportunities and challenges."}/>
           </div>
         </div>
-        <div className='section'>
+        <div className='section' id='education'>
           <div className='sectionHeader'><h1>Education</h1></div>
           <div className='contentBox'>
             <Content 
@@ -68,7 +68,7 @@ const HomePage = () => {
             />
           </div>
         </div>
-        <div className='section' >
+        <div className='section' id='experience'>
           <div className='sectionHeader'><h1>Experience</h1></div>
             <div className='contentBox' style={{ gap: '20px' }}>
             <Content 
@@ -98,25 +98,44 @@ const HomePage = () => {
             />
             </div>
         </div>
-        <div className='section'>
+        <div className='section' id='projects'>
           <div className='sectionHeader'><h1>Projects</h1></div>
-          <div className='contentBox' style={{ gap: '20px' }}>
+          <div className='contentBox' style={{ gap: '20px'} }>
               <ProjectCard 
               title="Bloggit"
               description = "Developed a full-stack application, allowing users to create profiles and post customized blogs to their community. Implemented a structured back-end with proper error handling, enabling requests to and from MongoDB database."
+              link='https://github.com/alihshaikh/BloggerApp'
               />
               <ProjectCard 
               title="Spotify Analytics Application"
               description = "Created a web application that allows Spotify users to learn more about their listening habits. Integrated requests from the Spotify API to display user analytics such as favorite songs and artists. Designed an automated system which creates personalized playlists based on user’s interests"
+              link='https://github.com/alihshaikh/mySpot'
               />
               <ProjectCard 
               title="MovieMe"
               description = "Contributed to back-end development whilst working with large movie databases with over 1000 movies. Devised an algorithm which generates movie recommendations based on user’s input of favorite movies, genres, and
               actors. Group project @ UCR"
+              link='https://github.com/cs100/final-project-whe038-ashai014-npasr001-mneru002'
               />
+              <ProjectCard 
+              title="RedditCrawler"
+              description = "Created a python script for the purpose of information retrieval from reddit. Allow for the retrieval of information from various different subreddits while aggregating data within friendly JSON files."
+              link='https://github.com/cs100/final-project-whe038-ashai014-npasr001-mneru002'
+              />
+              <ProjectCard 
+              title="9 Puzzle Solver w/ A* Search"
+              description = "Given any configuration of a 9-puzzle, this python script performs an intelligent solution to solve the puzzle in an optimal manner. The A* search algorithm algorithm uses heuristics to guide its search process"
+              link='https://github.com/alihshaikh/A-Star-Search-with-9-puzzle'
+              />
+              <ProjectCard 
+              title="Split My Check"
+              description = "I created this short python script because me and a few friends went to get dinner and I had to calculate how much each person owns me one too many times. This script accounts for tax and tip so each person pays their fair share."
+              link='https://github.com/alihshaikh/splitmycheck'
+              />
+              
           </div>
         </div>
-        <div className='section' >
+        <div className='section'id='hobbies'>
           <div className='sectionHeader'><h1>Hobbies</h1></div>
           <div className='contentBox'>
             <div className='hobbies-wrapper'>
@@ -125,7 +144,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className='section'>
+        <div className='section' id='blogs'>
           <div className='sectionHeader'><h1>Blogs</h1></div>
           <div className='contentBox'>
               <BlogPost title ={blogPosts[0].title} description={blogPosts[0].content} image={blogPosts[0].image}/>

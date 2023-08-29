@@ -24,6 +24,8 @@
     display: flex;
     justify-content: center;
     padding-left: 20px;
+    flex-wrap: wrap; /* Allow cards to wrap onto new rows */
+
   }
   
   

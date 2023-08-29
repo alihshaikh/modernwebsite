@@ -14,9 +14,8 @@
         color: white;
         padding: 40px;
         font-size: 20px;
+        
         /* Add any other styling you need */
-      
-
     }    
     .vertical-navbar img {
         max-width: 100%;
@@ -34,8 +33,10 @@
         background-color: #0f172a;
         color: white;
         padding: 10px 20px;
-        font-size: 20px;;
+        font-size: 20px;
         text-align: center;
+        height: 100vh; /* Set the height to 100% of viewport height */
+        width: 100%; /* Set the width to 100% */
     }
 
     .vertical-navbar img {
