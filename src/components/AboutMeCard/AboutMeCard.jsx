@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutMeCard.css'
-import linked from '../../imgs/linked.jpeg'
+
 
 const AboutMeCard = ({image, content}) => {
     return (

@@ -11,6 +11,7 @@ import ProjectCard from '../components/ProjectCard/ProjectCard';
 import BlogPost from '../components/BlogPost/BlogPost';
 import AboutMeCard from '../components/AboutMeCard/AboutMeCard';
 import blogpost1 from "../imgs/ bp1.png"
+import rainer from "../imgs/rainer.png"
 
 const blogPosts = [
   {
@@ -51,7 +52,7 @@ const HomePage = () => {
         <div className='section' id='about'>
           <div className='sectionHeader'><h1>About Me</h1></div>
           <div className='contentBox'>
-            <AboutMeCard image={linked} content={"Hi! My name is Ali Shaikh and I am going into my senior year as an undergraduate student at the University of California, Riverside, majoring in Computer Science & Business. Some interests of mine include playing video games, pickup basketball, music, and learning new things on my own. I hold a strong interest in the field of Software Engineering and am open to new opportunities and challenges."}/>
+            <AboutMeCard image={rainer} content={"Hi! My name is Ali Shaikh and I am going into my senior year as an undergraduate student at the University of California, Riverside, majoring in Computer Science & Business. Some interests of mine include playing video games, pickup basketball, music, and learning new things on my own. I hold a strong interest in the field of Software Engineering and am open to new opportunities and challenges."}/>
           </div>
         </div>
         <div className='section' id='education'>
@@ -132,7 +133,6 @@ const HomePage = () => {
               description = "I created this short python script because me and a few friends went to get dinner and I had to calculate how much each person owns me one too many times. This script accounts for tax and tip so each person pays their fair share."
               link='https://github.com/alihshaikh/splitmycheck'
               />
-              
           </div>
         </div>
         <div className='section'id='hobbies'>
